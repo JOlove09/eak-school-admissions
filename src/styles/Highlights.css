@@ -1,0 +1,50 @@
+
+.highlights-section {
+  padding: 65px 8% 35px;
+  background: #174c3d;
+  color: #ffffff;
+}
+
+.highlights-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  text-align: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.highlight-item svg {
+  color: #d7b77a;
+}
+
+.highlight-item h3 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 42px;
+  color: #ffffff;
+  margin: 16px 0 8px;
+}
+
+.highlight-item p {
+  color: #d2e2d8;
+  font-size: 14px;
+  margin: 0;
+}
+
+.highlights-note {
+  margin: 35px 0 0;
+  text-align: center;
+  font-size: 11px;
+  color: #d2e2d8;
+}
+
+@media (max-width: 700px) {
+  .highlights-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 45px;
+  }
+
+  .highlight-item h3 {
+    font-size: 34px;
+  }
+}

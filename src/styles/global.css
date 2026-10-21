@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #18352e;
+  background: #f8f7f2;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
+
+body {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #b68d4c;
+  outline-offset: 3px;
+}
+
+.placeholder-section {
+  padding: 85px 8%;
+  text-align: center;
+  background: #fff;
+}
+
+.placeholder-section:nth-of-type(even) {
+  background: #f8f7f2;
+}
+
+.placeholder-section h2 {
+  font-family: "Playfair Display", serif;
+  color: #174c3d;
+}
+
+
+/* Final responsive and accessibility improvements */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+body {
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:focus-visible {
+  outline: 3px solid #b68d4c;
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 12px;
+  padding: 12px 18px;
+  z-index: 1000;
+  background: #174c3d;
+  color: white;
+  border-radius: 6px;
+}
+
+.skip-link:focus {
+  top: 12px;
+}

@@ -1,0 +1,76 @@
+
+.facilities-section {
+  padding: 95px 8%;
+  background: #ffffff;
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1250px;
+  margin: auto;
+}
+
+.facility-card {
+  overflow: hidden;
+  background: #f8f7f2;
+  border: 1px solid #e8e8df;
+  border-radius: 14px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.facility-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.facility-image {
+  height: 220px;
+  overflow: hidden;
+  background: #e5eee8;
+}
+
+.facility-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.facility-card:hover img {
+  transform: scale(1.05);
+}
+
+.facility-content {
+  padding: 25px;
+}
+
+.facility-content h3 {
+  color: #174c3d;
+  font-size: 20px;
+  margin: 0 0 12px;
+}
+
+.facility-content p {
+  color: #66756e;
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .facilities-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .facilities-section {
+    padding: 65px 6%;
+  }
+
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+}

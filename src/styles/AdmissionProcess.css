@@ -1,0 +1,70 @@
+
+.admission-section {
+  padding: 95px 8%;
+  background: #f8f7f2;
+}
+
+.admission-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.admission-card {
+  background: white;
+  padding: 30px 22px;
+  border: 1px solid #e8e8df;
+  border-radius: 14px;
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  display: block;
+  color: #b68d4c;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.admission-icon {
+  height: 65px;
+  width: 65px;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #174c3d;
+  background: #e5eee8;
+}
+
+.admission-card h3 {
+  color: #174c3d;
+  font-size: 19px;
+}
+
+.admission-card p {
+  color: #66756e;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+@media (max-width: 1100px) {
+  .admission-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .admission-section {
+    padding: 65px 6%;
+  }
+
+  .admission-grid {
+    grid-template-columns: 1fr;
+  }
+}
